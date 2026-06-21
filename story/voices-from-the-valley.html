@@ -95,42 +95,43 @@
           <section aria-labelledby="player-heading">
             <h2 id="player-heading" class="sr-only">Audio player</h2>
 
-            <div class="media-player">
-              <div class="media-player__audio-wrap">
-                <!-- Album art / cover -->
-                <svg class="media-player__audio-art" aria-hidden="true"
-                     viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="80" height="80" fill="#1A1D26"/>
-                  <circle cx="40" cy="40" r="25" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.5"/>
-                  <circle cx="40" cy="40" r="15" fill="#F5A623" opacity="0.1"/>
-                  <circle cx="40" cy="40" r="6" fill="#F5A623" opacity="0.6"/>
-                  <circle cx="40" cy="40" r="2" fill="#0D0F14"/>
-                </svg>
+            <figure>
+              <div class="media-player">
+                <div class="media-player__audio-wrap">
+                  <svg class="media-player__audio-art" aria-hidden="true"
+                       viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="80" height="80" fill="#1A1D26"/>
+                    <circle cx="40" cy="40" r="25" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.5"/>
+                    <circle cx="40" cy="40" r="15" fill="#F5A623" opacity="0.1"/>
+                    <circle cx="40" cy="40" r="6" fill="#F5A623" opacity="0.6"/>
+                    <circle cx="40" cy="40" r="2" fill="#0D0F14"/>
+                  </svg>
 
-                <div>
-                  <p style="font-family:monospace; font-size:0.75rem; color:#8B93A8; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Now Playing</p>
-                  <p style="font-weight:600; margin-bottom:0.75rem;">Voices of the Earth — Chris Kimani & Nangila Wapula</p>
+                  <div>
+                    <p style="font-family:monospace; font-size:0.75rem; color:#8B93A8; text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.25rem;">Now Playing</p>
+                    <p style="font-weight:600; margin-bottom:0.75rem;">Voices of the Earth — Chris Kimani & Nangila Wapula</p>
 
-                  <audio
-                    controls
-                    aria-label="Audio: Voices of the Earth — 2 minutes 21 seconds"
-                    preload="metadata"
-                    style="width:100%;"
-                  >
-                    <source src="../assets/audio/voices-from-the-valley.mp3" type="audio/mpeg" />
-                    <p>
-                      Your browser does not support the audio element.
-                      <a href="../assets/transcripts/voices-from-the-valley.txt">Read the transcript instead</a>.
-                    </p>
-                  </audio>
+                    <audio
+                      controls
+                      aria-label="Audio: Voices of the Earth — 2 minutes 21 seconds"
+                      preload="metadata"
+                      style="width:100%;"
+                    >
+                      <source src="../assets/audio/voices-from-the-valley.mp3" type="audio/mpeg" />
+                      <p>
+                        Your browser does not support the audio element.
+                        <a href="../assets/transcripts/voices-from-the-valley.txt">Read the transcript instead</a>.
+                      </p>
+                    </audio>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Accessibility note about audio -->
-            <p style="font-size:0.8rem; color:#8B93A8; margin-top:0.75rem; font-family:monospace;">
-              ✓ Full transcript available below · Keyboard: Space to play/pause, arrow keys to seek
-            </p>
+              <figcaption style="font-size:0.8rem; color:#8B93A8; margin-top:0.75rem; font-family:monospace;">
+                Audio documentary · 2 min 21 sec · Chris Kimani &amp; Nangila Wapula ·
+                <a href="../assets/transcripts/voices-from-the-valley.txt">Download transcript</a> ·
+                Keyboard: Space to play/pause, arrow keys to seek
+              </figcaption>
+            </figure>
           </section>
 
           <!-- Story Body -->

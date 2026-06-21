@@ -72,35 +72,34 @@
           <!-- Video Player -->
           <section aria-labelledby="player-heading">
             <h2 id="player-heading" class="sr-only">Video player</h2>
-            <div class="media-player">
-              <div class="media-player__video-wrap">
-                <!--
-                  <track> provides captions for accessibility (WCAG 1.2.2).
-                  Point this to a real .vtt file if you have one.
-                -->
-                <video
-                  controls
-                  aria-label="Video: The Night Shift at the Clinic — NHS at 70, 7 minutes 29 seconds"
-                  preload="metadata"
-                >
-                  <source src="../assets/video/night-shift-at-the-clinic.mp4" type="video/mp4" />
-                  <track
-                    kind="captions"
-                    src="../assets/transcripts/night-shift-captions.vtt"
-                    srclang="en"
-                    label="English captions"
-                    default
-                  />
-                  <p>
-                    Your browser does not support the video element.
-                    <a href="#transcript-body">Read the transcript below</a>.
-                  </p>
-                </video>
+            <figure>
+              <div class="media-player">
+                <div class="media-player__video-wrap">
+                  <video
+                    controls
+                    aria-label="Video: The Night Shift at the Clinic — NHS at 70, 7 minutes 29 seconds"
+                    preload="metadata"
+                  >
+                    <source src="../assets/video/night-shift-at-the-clinic.mp4" type="video/mp4" />
+                    <track
+                      kind="captions"
+                      src="../assets/transcripts/night-shift-captions.vtt"
+                      srclang="en"
+                      label="English captions"
+                      default
+                    />
+                    <p>
+                      Your browser does not support the video element.
+                      <a href="#transcript-body">Read the transcript below</a>.
+                    </p>
+                  </video>
+                </div>
               </div>
-            </div>
-            <p style="font-size:0.8rem; color:#8B93A8; margin-top:0.75rem; font-family:monospace;">
-              ✓ Captions available — press C in the player to toggle · Full transcript below
-            </p>
+              <figcaption style="font-size:0.8rem; color:#8B93A8; margin-top:0.75rem; font-family:monospace;">
+                Documentary · 7 min 29 sec · NHS at 70 · Directed by Dr Salia Ahsan ·
+                English captions included · Full transcript available below
+              </figcaption>
+            </figure>
           </section>
 
           <!-- Story Body -->
