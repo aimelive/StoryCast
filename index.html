@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StoryCast — audio and video storytelling from voices around the world. Fully accessible, human-centered narratives." />
+  <title>StoryCast — Audio & Video Storytelling</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- Skip navigation link for keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ─── Site Header ─────────────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__logo" aria-label="StoryCast home">
+        <span class="site-header__logo-mark" aria-hidden="true">▶</span>
+        StoryCast
+      </a>
+
+      <button class="site-nav__toggle"
+              aria-controls="primary-nav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav aria-label="Primary navigation">
+        <ul class="site-nav" id="primary-nav" role="list">
+          <li><a class="site-nav__link" href="index.html" aria-current="page">Home</a></li>
+          <li><a class="site-nav__link" href="story/voices-from-the-valley.html">Stories</a></li>
+          <li><a class="site-nav__link" href="about.html">About & Access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── Main Content ────────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="page-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero">
+          <p class="hero__label" aria-hidden="true">Audio · Video · Transcript</p>
+
+          <h1 class="hero__title" id="hero-heading">
+            Stories that deserve to be <em>heard</em>
+          </h1>
+
+          <p class="hero__description">
+            StoryCast is an accessible media platform for audio documentaries,
+            oral histories, and video essays — every story accompanied by full
+            transcripts and captions.
+          </p>
+
+          <div class="hero__actions">
+            <a href="story/voices-from-the-valley.html" class="btn btn--primary">
+              <span aria-hidden="true">▶</span>
+              Listen to a Story
+            </a>
+            <a href="about.html" class="btn btn--outline">
+              How accessibility works
+            </a>
+          </div>
+
+          <div class="hero__stats" role="list" aria-label="Platform statistics">
+            <div class="hero__stat" role="listitem">
+              <p class="hero__stat-number">142</p>
+              <p class="hero__stat-label">Stories</p>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <p class="hero__stat-number">38</p>
+              <p class="hero__stat-label">Countries</p>
+            </div>
+            <div class="hero__stat" role="listitem">
+              <p class="hero__stat-number">100%</p>
+              <p class="hero__stat-label">Transcribed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Story -->
+    <section class="page-section" aria-labelledby="featured-heading">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Editor's pick</p>
+        <h2 class="section-title" id="featured-heading">Featured Story</h2>
+        <p class="section-subtitle">A story chosen for its depth, craft, and accessibility of perspective.</p>
+
+        <article class="featured-story" aria-label="Featured: Voices from the Valley">
+          <div class="featured-story__media">
+            <!-- Decorative placeholder image representing the story -->
+            <svg aria-hidden="true" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+              <defs>
+                <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1a2035"/>
+                  <stop offset="100%" stop-color="#0D0F14"/>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#sky)"/>
+              <!-- Mountains -->
+              <polygon points="0,350 150,180 300,350" fill="#141820" opacity="0.8"/>
+              <polygon points="200,350 380,140 560,350" fill="#1a2035" opacity="0.9"/>
+              <polygon points="450,350 620,200 800,350" fill="#0f1219" opacity="0.8"/>
+              <!-- Stars -->
+              <circle cx="120" cy="60" r="1.5" fill="#F5A623" opacity="0.8"/>
+              <circle cx="250" cy="40" r="1" fill="#F2EFE8" opacity="0.6"/>
+              <circle cx="400" cy="30" r="1.5" fill="#F2EFE8" opacity="0.7"/>
+              <circle cx="600" cy="55" r="1" fill="#F5A623" opacity="0.6"/>
+              <circle cx="700" cy="25" r="1.5" fill="#F2EFE8" opacity="0.5"/>
+              <circle cx="520" cy="80" r="1" fill="#F2EFE8" opacity="0.4"/>
+              <!-- Moon glow -->
+              <circle cx="660" cy="90" r="30" fill="#F5A623" opacity="0.08"/>
+              <circle cx="660" cy="90" r="18" fill="#F5A623" opacity="0.15"/>
+              <circle cx="660" cy="90" r="10" fill="#F5A623" opacity="0.6"/>
+              <!-- Ground -->
+              <rect x="0" y="340" width="800" height="110" fill="#0a0c10"/>
+              <!-- Story text overlay area -->
+              <rect x="0" y="380" width="800" height="70" fill="rgba(13,15,20,0.7)"/>
+              <text x="40" y="418" fill="#F5A623" font-family="monospace" font-size="11" letter-spacing="3">AUDIO DOCUMENTARY</text>
+              <text x="40" y="437" fill="#F2EFE8" font-family="Georgia" font-size="16" font-weight="bold">Voices from the Valley</text>
+            </svg>
+            <div class="featured-story__badge" aria-label="Featured story">Featured</div>
+          </div>
+
+          <div class="featured-story__content">
+            <p class="featured-story__category">Audio Documentary</p>
+            <h3 class="featured-story__title">
+              <a href="story/voices-from-the-valley.html">
+                Voices from the Valley: Stories of the Rift
+              </a>
+            </h3>
+            <p class="featured-story__excerpt">
+              Over eighteen months, producer Amara Diallo collected testimonies
+              from communities living along East Africa's Great Rift Valley —
+              people whose daily lives straddle geology, tradition, and climate change.
+            </p>
+            <div class="featured-story__meta">
+              <span>By Amara Diallo</span>
+              <span aria-label="Duration: 42 minutes">42 min</span>
+              <span>Audio · Full Transcript</span>
+            </div>
+            <div style="margin-top: 1.5rem;">
+              <a href="story/voices-from-the-valley.html" class="btn btn--primary">
+                <span aria-hidden="true">▶</span> Listen now
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Recent Stories Grid -->
+    <section class="page-section" aria-labelledby="recent-heading">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Recently added</p>
+        <h2 class="section-title" id="recent-heading">New Stories</h2>
+        <p class="section-subtitle">Fresh perspectives — audio essays, interviews, and video documentaries.</p>
+
+        <div class="story-grid" style="margin-top: 2.5rem;">
+          <div class="stories-grid">
+
+            <article class="story-card" aria-label="Story: The Cartographers of Memory">
+              <div class="story-card__thumbnail">
+                <svg aria-hidden="true" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                  <rect width="400" height="225" fill="#1A1D26"/>
+                  <circle cx="200" cy="112" r="70" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.3"/>
+                  <circle cx="200" cy="112" r="45" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.5"/>
+                  <circle cx="200" cy="112" r="20" fill="#F5A623" opacity="0.15"/>
+                  <line x1="50" y1="112" x2="350" y2="112" stroke="#272C3A" stroke-width="1"/>
+                  <line x1="200" y1="20" x2="200" y2="205" stroke="#272C3A" stroke-width="1"/>
+                  <text x="200" y="118" text-anchor="middle" fill="#F5A623" font-family="monospace" font-size="10" letter-spacing="2">MAP</text>
+                </svg>
+                <span class="story-card__badge story-card__badge--audio" aria-label="Audio story">
+                  ♪ Audio
+                </span>
+              </div>
+              <div class="story-card__body">
+                <p class="story-card__category">Oral History</p>
+                <h3 class="story-card__title">
+                  <a href="story/voices-from-the-valley.html">The Cartographers of Memory</a>
+                </h3>
+                <p class="story-card__excerpt">
+                  Three elder women in Oaxaca draw maps from memory — places that no
+                  longer exist except in their minds and their stories.
+                </p>
+                <div class="story-card__meta">
+                  <span>Rosa Villegas</span>
+                  <span class="story-card__duration" aria-label="Duration: 28 minutes">28 min</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card" aria-label="Story: Night Shift at the Clinic">
+              <div class="story-card__thumbnail">
+                <svg aria-hidden="true" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                  <rect width="400" height="225" fill="#0D0F14"/>
+                  <rect x="140" y="60" width="120" height="105" rx="4" fill="#1A1D26" stroke="#272C3A" stroke-width="1"/>
+                  <rect x="155" y="75" width="35" height="30" rx="2" fill="#F5A623" opacity="0.3"/>
+                  <rect x="210" y="75" width="35" height="30" rx="2" fill="#272C3A"/>
+                  <rect x="155" y="115" width="35" height="30" rx="2" fill="#272C3A"/>
+                  <rect x="210" y="115" width="35" height="30" rx="2" fill="#E8534A" opacity="0.3"/>
+                  <rect x="175" y="140" width="50" height="25" rx="0" fill="#1A1D26" stroke="#272C3A"/>
+                </svg>
+                <span class="story-card__badge story-card__badge--video" aria-label="Video story">
+                  ▶ Video
+                </span>
+              </div>
+              <div class="story-card__body">
+                <p class="story-card__category">Documentary</p>
+                <h3 class="story-card__title">
+                  <a href="story/voices-from-the-valley.html">Night Shift at the Clinic</a>
+                </h3>
+                <p class="story-card__excerpt">
+                  A short documentary following rural healthcare workers through 
+                  twelve hours that stretch across two lives — the patient's and their own.
+                </p>
+                <div class="story-card__meta">
+                  <span>Jonas Müller</span>
+                  <span class="story-card__duration" aria-label="Duration: 19 minutes">19 min</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="story-card" aria-label="Story: What the Radio Said">
+              <div class="story-card__thumbnail">
+                <svg aria-hidden="true" viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+                  <rect width="400" height="225" fill="#1A1D26"/>
+                  <!-- Sound waves -->
+                  <path d="M140,112 Q180,70 220,112 Q260,154 300,112" fill="none" stroke="#F5A623" stroke-width="2" opacity="0.6"/>
+                  <path d="M110,112 Q170,50 230,112 Q290,174 350,112" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.3"/>
+                  <circle cx="200" cy="112" r="12" fill="#F5A623" opacity="0.8"/>
+                  <circle cx="200" cy="112" r="5" fill="#0D0F14"/>
+                </svg>
+                <span class="story-card__badge story-card__badge--audio" aria-label="Audio story">
+                  ♪ Audio
+                </span>
+              </div>
+              <div class="story-card__body">
+                <p class="story-card__category">Personal Essay</p>
+                <h3 class="story-card__title">
+                  <a href="story/voices-from-the-valley.html">What the Radio Said</a>
+                </h3>
+                <p class="story-card__excerpt">
+                  Growing up during power rationing in Lagos, the transistor radio 
+                  was how the city came into our home. A meditation on sound and memory.
+                </p>
+                <div class="story-card__meta">
+                  <span>Chidi Okafor</span>
+                  <span class="story-card__duration" aria-label="Duration: 14 minutes">14 min</span>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- .stories-grid -->
+        </div><!-- .story-grid container query wrapper -->
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="story/voices-from-the-valley.html" class="btn btn--outline">Browse all stories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / CTA -->
+    <section class="page-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2 class="cta-band__heading" id="newsletter-heading">
+              New stories, <em>never</em> spam
+            </h2>
+            <p class="cta-band__body">
+              Get one email a week with our latest audio and video story — 
+              always with a full transcript attached.
+            </p>
+          </div>
+          <form class="cta-band__form" action="#" method="post" novalidate aria-label="Newsletter signup">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              class="cta-band__input"
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="your@email.com"
+              autocomplete="email"
+              required
+              aria-required="true"
+            />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Site Footer ──────────────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a href="index.html" class="site-header__logo" aria-label="StoryCast home" style="font-size:1.25rem;">
+            <span class="site-header__logo-mark" aria-hidden="true">▶</span>
+            StoryCast
+          </a>
+          <p>Audio and video storytelling, accessible to everyone. All stories include transcripts, captions, and ARIA support.</p>
+        </div>
+
+        <nav aria-label="Footer navigation — Stories">
+          <p class="site-footer__heading">Stories</p>
+          <ul class="site-footer__links" role="list">
+            <li><a href="story/voices-from-the-valley.html">Latest</a></li>
+            <li><a href="story/voices-from-the-valley.html">Audio</a></li>
+            <li><a href="story/voices-from-the-valley.html">Video</a></li>
+            <li><a href="story/voices-from-the-valley.html">Oral History</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Footer navigation — About">
+          <p class="site-footer__heading">About</p>
+          <ul class="site-footer__links" role="list">
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="about.html#accessibility">Accessibility</a></li>
+            <li><a href="about.html#team">Team</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2025 StoryCast. All rights reserved.</p>
+        <p>
+          <a href="about.html#accessibility">Accessibility statement</a> ·
+          <a href="#" rel="noopener">Privacy policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.site-nav__toggle');
+    const nav = document.querySelector('.site-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        toggle.textContent = isOpen ? '✕' : '☰';
+      });
+    }
+  </script>
+
+</body>
+</html>
