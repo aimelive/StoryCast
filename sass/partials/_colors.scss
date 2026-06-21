@@ -1,0 +1,21 @@
+// ─── Color Tokens ────────────────────────────────────────────────────────────
+// StoryCast palette: deep ink night, warm signal amber, chalk off-white, muted slate
+
+$color-ink:        #0D0F14;   // near-black background
+$color-ink-mid:    #1A1D26;   // cards / elevated surfaces
+$color-ink-light:  #272C3A;   // borders, dividers
+$color-amber:      #F5A623;   // primary accent — warm broadcast amber
+$color-amber-dim:  #C07D10;   // hover / pressed state
+$color-chalk:      #F2EFE8;   // body text on dark
+$color-muted:      #8B93A8;   // secondary text, metadata
+$color-signal:     #E8534A;   // "live" / featured indicator
+$color-success:    #3DAD74;   // transcript / caption indicator
+
+// Semantic aliases
+$bg-page:          $color-ink;
+$bg-surface:       $color-ink-mid;
+$bg-border:        $color-ink-light;
+$text-primary:     $color-chalk;
+$text-secondary:   $color-muted;
+$text-accent:      $color-amber;
+$focus-ring:       $color-amber;
