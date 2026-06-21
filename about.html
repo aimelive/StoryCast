@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About StoryCast — our mission to make audio and video storytelling accessible to everyone, with full transcripts, captions, and ARIA support." />
+  <title>About & Access — StoryCast</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ─── Header ──────────────────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="site-header__logo" aria-label="StoryCast home">
+        <span class="site-header__logo-mark" aria-hidden="true">▶</span>
+        StoryCast
+      </a>
+
+      <button class="site-nav__toggle"
+              aria-controls="primary-nav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">☰</button>
+
+      <nav aria-label="Primary navigation">
+        <ul class="site-nav" id="primary-nav" role="list">
+          <li><a class="site-nav__link" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" href="story/voices-from-the-valley.html">Stories</a></li>
+          <li><a class="site-nav__link" href="about.html" aria-current="page">About & Access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── Main ────────────────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Mission -->
+    <section class="page-section" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="mission-block">
+          <p class="section-label" aria-hidden="true">Why we exist</p>
+          <h1 class="mission-block__quote" id="mission-heading">
+            Every story deserves a listener.
+            <em>Every listener deserves access.</em>
+          </h1>
+          <p class="mission-block__body">
+            StoryCast was founded on a simple idea: the most powerful stories in 
+            the world are often the least accessible. We publish audio and video
+            documentary work — and we make every single piece available with
+            full transcripts, captions, and keyboard-navigable players.
+            No exceptions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="page-section" aria-labelledby="features-heading">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">What we do</p>
+        <h2 class="section-title" id="features-heading">Storytelling, done differently</h2>
+        <p class="section-subtitle">We work with journalists, documentary makers, and oral historians to bring their work to the widest possible audience.</p>
+
+        <div class="feature-grid" style="margin-top: 2.5rem;">
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🎙</div>
+            <h3 class="feature-card__title">Audio Documentaries</h3>
+            <p class="feature-card__body">
+              Long-form audio journalism, oral histories, and intimate
+              conversations recorded in the field. Every piece is
+              fully transcribed with timed cues.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📹</div>
+            <h3 class="feature-card__title">Video Essays</h3>
+            <p class="feature-card__body">
+              Short and long-form documentary film. Embedded players
+              include closed captions in multiple languages, plus
+              a full written transcript below each video.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📝</div>
+            <h3 class="feature-card__title">Written Transcripts</h3>
+            <p class="feature-card__body">
+              Every story on StoryCast has a full, human-edited
+              transcript — available to read online or download as
+              a plain text file. Timed cues let you follow along.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🌍</div>
+            <h3 class="feature-card__title">Global Voices</h3>
+            <p class="feature-card__body">
+              Stories from 38 countries. Where stories are recorded in
+              languages other than English, we provide English translations
+              in the transcript and as optional audio descriptions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessibility Section -->
+    <section class="page-section" id="accessibility" aria-labelledby="a11y-heading">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">WCAG AA compliance</p>
+        <h2 class="section-title" id="a11y-heading">Accessibility commitment</h2>
+        <p class="section-subtitle">
+          We follow WCAG 2.1 Level AA guidelines throughout. Here is specifically
+          what that means on StoryCast.
+        </p>
+
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); gap:1.5rem; margin-top:2.5rem;">
+
+          <div class="a11y-checklist" aria-labelledby="media-access-heading">
+            <h3 class="a11y-checklist__header" id="media-access-heading">
+              Media Accessibility
+            </h3>
+            <ul class="a11y-checklist__list" role="list">
+              <li class="a11y-checklist__item">
+                All audio stories have full, timed transcripts readable online and downloadable.
+              </li>
+              <li class="a11y-checklist__item">
+                All video stories include closed captions via WebVTT <code>&lt;track&gt;</code> elements.
+              </li>
+              <li class="a11y-checklist__item">
+                Native <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements use browser-native controls,
+                which are keyboard-accessible in all major browsers.
+              </li>
+              <li class="a11y-checklist__item">
+                Decorative imagery uses <code>aria-hidden="true"</code>; informative images have descriptive <code>alt</code> text.
+              </li>
+            </ul>
+          </div>
+
+          <div class="a11y-checklist" aria-labelledby="nav-access-heading">
+            <h3 class="a11y-checklist__header" id="nav-access-heading">
+              Navigation & Structure
+            </h3>
+            <ul class="a11y-checklist__list" role="list">
+              <li class="a11y-checklist__item">
+                A "Skip to main content" link is the first focusable element on every page.
+              </li>
+              <li class="a11y-checklist__item">
+                Landmark regions (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;aside&gt;</code>) provide screen reader navigation.
+              </li>
+              <li class="a11y-checklist__item">
+                All navigation elements are reachable and operable by keyboard alone.
+              </li>
+              <li class="a11y-checklist__item">
+                Visible <code>:focus-visible</code> states use a 2.5px amber ring with sufficient contrast on all interactive elements.
+              </li>
+            </ul>
+          </div>
+
+          <div class="a11y-checklist" aria-labelledby="content-access-heading">
+            <h3 class="a11y-checklist__header" id="content-access-heading">
+              Content & Color
+            </h3>
+            <ul class="a11y-checklist__list" role="list">
+              <li class="a11y-checklist__item">
+                Body text (<code>#F2EFE8</code> on <code>#0D0F14</code>) achieves 16.2:1 contrast ratio — well above the 4.5:1 AA requirement.
+              </li>
+              <li class="a11y-checklist__item">
+                Secondary text (<code>#8B93A8</code> on <code>#0D0F14</code>) achieves 5.8:1 contrast ratio, meeting AA for normal text.
+              </li>
+              <li class="a11y-checklist__item">
+                Amber accent (<code>#F5A623</code> on <code>#0D0F14</code>) achieves 8.1:1 contrast ratio for links and interactive elements.
+              </li>
+              <li class="a11y-checklist__item">
+                <code>prefers-reduced-motion</code> media query disables all CSS animations and transitions for users who prefer reduced motion.
+              </li>
+            </ul>
+          </div>
+
+          <div class="a11y-checklist" aria-labelledby="aria-heading">
+            <h3 class="a11y-checklist__header" id="aria-heading">
+              ARIA & Semantics
+            </h3>
+            <ul class="a11y-checklist__list" role="list">
+              <li class="a11y-checklist__item">
+                Toggle buttons use <code>aria-expanded</code> to communicate open/closed state to screen readers.
+              </li>
+              <li class="a11y-checklist__item">
+                <code>aria-current="page"</code> identifies the active page in all navigation menus.
+              </li>
+              <li class="a11y-checklist__item">
+                ARIA labels (<code>aria-label</code>, <code>aria-labelledby</code>) supplement semantic HTML where the visible label is insufficient.
+              </li>
+              <li class="a11y-checklist__item">
+                Story metadata uses <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code> for proper semantic association.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div style="margin-top:2rem; padding:1.5rem; background:#1A1D26; border:1px solid #272C3A; border-radius:0.5rem;">
+          <p style="font-size:0.875rem; color:#8B93A8; line-height:1.8;">
+            <strong style="color:#F2EFE8;">Known limitations:</strong>
+            The native <code>&lt;audio&gt;</code> element's controls vary in appearance across browsers and operating systems,
+            which means visual styling of the player is limited to browser defaults. We've chosen native controls
+            deliberately — they are better tested for accessibility than custom JavaScript players.
+            If you encounter any accessibility barriers, please
+            <a href="mailto:access@storycast.example" style="color:#F5A623;">contact our accessibility team</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to engage -->
+    <section class="page-section" aria-labelledby="engage-heading">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">Get involved</p>
+        <h2 class="section-title" id="engage-heading">How you can engage</h2>
+
+        <div class="feature-grid" style="margin-top:2rem;">
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">👂</div>
+            <h3 class="feature-card__title">Listen & Read</h3>
+            <p class="feature-card__body">
+              Every story works two ways: as audio or video to play, and as a
+              full transcript to read at your own pace. Switch any time.
+            </p>
+            <a href="story/voices-from-the-valley.html" class="btn btn--outline" style="margin-top:auto;">Browse stories</a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">✉️</div>
+            <h3 class="feature-card__title">Pitch a Story</h3>
+            <p class="feature-card__body">
+              We accept pitches from audio journalists, documentary makers, and
+              oral historians worldwide. All accepted work is transcribed and
+              published at no cost to the creator.
+            </p>
+            <a href="mailto:pitch@storycast.example" class="btn btn--outline" style="margin-top:auto;">Send a pitch</a>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🔤</div>
+            <h3 class="feature-card__title">Transcription Volunteers</h3>
+            <p class="feature-card__body">
+              Our transcripts are human-edited for accuracy and tone. Volunteer
+              transcriptionists help us maintain quality across languages and dialects.
+            </p>
+            <a href="mailto:volunteer@storycast.example" class="btn btn--outline" style="margin-top:auto;">Join the team</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="page-section" id="team" aria-labelledby="team-heading">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">The people</p>
+        <h2 class="section-title" id="team-heading">Our team</h2>
+        <p class="section-subtitle">A small, distributed team of journalists, engineers, and accessibility specialists.</p>
+
+        <div class="team-grid" style="margin-top:2.5rem;">
+
+          <article class="team-card" aria-label="Team member: Nadia Bouchentouf, Founder & Editor">
+            <svg class="team-card__img" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" fill="#1A1D26"/>
+              <circle cx="100" cy="75" r="40" fill="#272C3A"/>
+              <circle cx="100" cy="75" r="32" fill="#8B93A8" opacity="0.4"/>
+              <ellipse cx="100" cy="160" rx="60" ry="50" fill="#272C3A"/>
+              <!-- Color accent -->
+              <rect x="0" y="185" width="200" height="15" fill="#F5A623" opacity="0.2"/>
+            </svg>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Nadia Bouchentouf</h3>
+              <p class="team-card__role">Founder & Editor</p>
+            </div>
+          </article>
+
+          <article class="team-card" aria-label="Team member: James Osei, Head of Accessibility">
+            <svg class="team-card__img" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" fill="#0D0F14"/>
+              <circle cx="100" cy="75" r="40" fill="#1A1D26"/>
+              <circle cx="100" cy="75" r="32" fill="#8B93A8" opacity="0.3"/>
+              <ellipse cx="100" cy="160" rx="60" ry="50" fill="#1A1D26"/>
+              <rect x="0" y="185" width="200" height="15" fill="#3DAD74" opacity="0.2"/>
+            </svg>
+            <div class="team-card__body">
+              <h3 class="team-card__name">James Osei</h3>
+              <p class="team-card__role">Head of Accessibility</p>
+            </div>
+          </article>
+
+          <article class="team-card" aria-label="Team member: Priya Sundaram, Lead Engineer">
+            <svg class="team-card__img" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" fill="#1A2035"/>
+              <circle cx="100" cy="75" r="40" fill="#272C3A"/>
+              <circle cx="100" cy="75" r="32" fill="#8B93A8" opacity="0.35"/>
+              <ellipse cx="100" cy="160" rx="60" ry="50" fill="#272C3A"/>
+              <rect x="0" y="185" width="200" height="15" fill="#E8534A" opacity="0.2"/>
+            </svg>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Priya Sundaram</h3>
+              <p class="team-card__role">Lead Engineer</p>
+            </div>
+          </article>
+
+          <article class="team-card" aria-label="Team member: Rodrigo Lima, Audio Producer">
+            <svg class="team-card__img" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="200" height="200" fill="#0D0F14"/>
+              <circle cx="100" cy="75" r="40" fill="#1A1D26"/>
+              <circle cx="100" cy="75" r="32" fill="#8B93A8" opacity="0.4"/>
+              <ellipse cx="100" cy="160" rx="60" ry="50" fill="#1A1D26"/>
+              <rect x="0" y="185" width="200" height="15" fill="#F5A623" opacity="0.3"/>
+            </svg>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Rodrigo Lima</h3>
+              <p class="team-card__role">Audio Producer</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ──────────────────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a href="index.html" class="site-header__logo" aria-label="StoryCast home" style="font-size:1.25rem;">
+            <span class="site-header__logo-mark" aria-hidden="true">▶</span>
+            StoryCast
+          </a>
+          <p>Audio and video storytelling, accessible to everyone. All stories include transcripts, captions, and ARIA support.</p>
+        </div>
+        <nav aria-label="Footer navigation — Stories">
+          <p class="site-footer__heading">Stories</p>
+          <ul class="site-footer__links" role="list">
+            <li><a href="story/voices-from-the-valley.html">Latest</a></li>
+            <li><a href="story/voices-from-the-valley.html">Audio</a></li>
+            <li><a href="story/voices-from-the-valley.html">Video</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer navigation — About">
+          <p class="site-footer__heading">About</p>
+          <ul class="site-footer__links" role="list">
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="about.html#accessibility">Accessibility</a></li>
+            <li><a href="about.html#team">Team</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© 2025 StoryCast. All rights reserved.</p>
+        <a href="about.html#accessibility">Accessibility statement</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.site-nav__toggle');
+    const nav = document.querySelector('.site-nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        toggle.textContent = isOpen ? '✕' : '☰';
+      });
+    }
+  </script>
+
+</body>
+</html>
